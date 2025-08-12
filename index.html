@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tugas Portov2</title>
+  <style>
+    body {
+      margin: 0px;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #000000, #0099ff);
+      color: #ffffff;
+    }
+
+    header {
+      background-color: #000000;
+      padding: 20px 0;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .header-content img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 10px;
+      border: 4px solid #ffffff;
+    }
+
+    .identitas {
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    .identitas h1 {
+      font-size: 28px;
+      margin: 0;
+      font-style: italic;
+    }
+
+    .identitas h2 {
+      margin: 5px 0 15px;
+      font-weight: 400;
+      font-style: oblique;
+    }
+
+    .identitas button {
+      background-color: #ffffff;
+      border: none;
+      padding: 8px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 5px;
+      color: rgb(0, 0, 0);
+    }
+
+    .identitas button:hover {
+      background-color: #047beb;
+    }
+
+    main {
+      padding: 30px 20px;
+    }
+
+    /* Pendidikan Layout (tanpa card) */
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 0;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-left: 5px solid #00a2ff;
+    padding-left: 15px;
+    display: inline-block;
+    margin-left: 100px;
+  
+}
+
+    .section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .image-box, .text-box {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+
+    .image-box img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .text-box h2 {
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .text-box h2::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 22px;
+      background-color:  #0099ff;
+      margin-right: 10px;
+    }
+
+    .text-box p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #ddd;
+      font-weight: 300;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.04);
+      padding: 15px 25px;
+      margin: 20px auto;
+      border-radius: 12px;
+      max-width: 700px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .card h2 {
+      border-left: 4px solid  #0099ff;
+      padding-left: 12px;
+      margin-bottom: 15px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .card ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .card ul li {
+      margin-bottom: 8px;
+      font-size: 14.5px;
+      color: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: #aaa;
+      font-size: 13px;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column !important;
+        text-align: center;
+      }
+
+      .text-box h2 {
+        justify-content: center;
+      }
+
+      .header-content {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <img src="assets/img/tomioka.jpg" alt="Seuyan" />
+      <div class="identitas">
+        <h1>Hello🌊</h1>
+        <h2>My name is Suyan</h2>
+        <a href="portofolio.html">
+          <button>Selengkapnya</button>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <h2 class="section-title">Riwayat Pendidikan</h2>
+
+    <div class="section">
+      <div class="image-box">
+        <img src="assets/img/smp.jpg" alt="SMP MuAD" />
+      </div>
+      <div class="text-box">
+        <h2>SMPN 8 METRO</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+            an unknown printer took a galley of type and scrambled it to make a type specimen book.
+             It has survived not only five centuries, but also the leap into electronic typesetting,
+              remaining essentially unchanged. It was popularised in the 1960s with the release of
+               Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of Lorem Ipsum 
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="image-box">
+        <img src="assets/img/smk.jpg" alt="SMKN 3 METRO" />
+      </div>
+      <div class="text-box">
+        <h2>SMKN 3 METRO</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+             in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecacupidatat
+              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+    <section class="card">
+      <h2>Pengalaman</h2>
+      <p>been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+          a galley of type and scrambled it to make a type specimen book. It has survived not only five
+          centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+          passages, and more recently with desktop publishing software like Aldus PageMaker including
+          versions of Lorem Ipsum.</p>
+    </section>
+
+    <section class="card">
+      <h2>Keahlian</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Suyan-Human</p>
+  </footer>
+</body>
